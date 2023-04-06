@@ -1,0 +1,84 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      dataset: airbyte_test
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: airbye-load-bq-test@maximal-chemist-355505.iam.gserviceaccount.com
+        client_id: '101218924344392221678'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/airbye-load-bq-test%40maximal-chemist-355505.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiT48kzx2V3PXG
+
+          grkSEX76E72G6paYaXPxIugLwjbuJguyCkZOCys/6wbnck+KJfoQfDxCHlF+ojtf
+
+          cBBUZNilgqSQ0UkZ+0HUlF1KZ6nM1ltbYHgxnL52Qp3hBYywfVULeqh5lDjTrGCa
+
+          UpXYFGohLILxQ78E3dkprijWfQsxg9lc+TrdQZKMUPF4ZjmFp+t74YRCIddcY1jr
+
+          FBDVa/4LL08/FJLsaipUlBEvbYt3lWLckPlwRc5GGGXwHdydVkUS6BWPBrReJGxJ
+
+          4sSr+EO072Ri58nPFdCeR4Ur+vY32u3Laa903jN4hssCxBSlya8NZZpV7KN3fU9Z
+
+          k/tqtRX5AgMBAAECggEACUvINYH9PkuQ8gUjp2LEJHuD89m0tVb40ns+0gmWDs60
+
+          Bcbr3uVp3TfPRes4nf9t0orjAqBs53VQNDedX9AEznnshfTOnIPU8eFrdGr6gSZX
+
+          xiSAzcqd5/UJyM0CEUukVst4Ibp5BLqPL9eCCIWmzG6Zs0q/gn5YRThZ02sG/Jdq
+
+          vfTKu77b0O1PG5zm6vQYECJdI6tiYH7tGGctG2CgOz0sQRzRKOWEqX46gyPTwOfH
+
+          U++u6H/wQwsQ9bW0J1v6fSfat0UlV2CqXqrf92jOLH0ckj8UhE1uLFDXjYwUBbWd
+
+          /DYM+GU1ABjL3QMf39O9qMq7SeYfRLh/I4T3xQU2DwKBgQDOzfSyU8odUBOnJw9D
+
+          rjEQ6VD9VbDi6x8j3dSpwYYGS1SVAdZukI+j3NFdRhPSjXF2CsXxJwIic/py7Fis
+
+          eNkYknCKdp56ZBujj1pgf7C+/mnb0XG8+UNXaRTCInZcY1DIF1gqOqtFUKQu57uV
+
+          RlGQ7aEtnqUQTjOaRfyDE7OdBwKBgQDI7AKcWO8U8oDgiknc/dPhryWILt6Nzhqq
+
+          VqZR/9SrvxOb+MMV0SaRT7LhGuB28knUfY/GSYwv7mYbnF0Ea4wnnbybjtEmMjuu
+
+          Rvrt2v83sRR7nou4gp47S/og0uma1WqxQiq+P61cn7tT24l6KKBKSIapTi9ROD2K
+
+          7Qy5tpf0/wKBgQCE4GZyUk4SKYqHIxy2suzJ3e/w5qdCFiqrA/SJolO4JZzSJR0f
+
+          a3kvo0lOsiE4bzNQ0jk+6n5/np90ShHrt7ZeCHGRNgg7wajUnd5HFKR/A78Gw3te
+
+          HZa8SkNRPY1pbVLRTdaTQ6EaZ2cm0DSCBG2SPm0Kf921LVoQrRlDK1yD7wKBgQCz
+
+          Mdq6Oo8wrX/Hw05RLIjWVXEx3itbaaBan2FC7NpuOsJwbxL+2ER/gQdWwLPFIh46
+
+          x6l8/YdsEEE9Ct3i3VBo3MOkMWHToSWdL20IyjKpJuPPxP10F/qrg/2XXMQ/9Wts
+
+          oEii2QPzAfr+tWQNcUJUPg7r3PFSjMhGqViaIYGxXQKBgHT72kHMd9KhKxCmSK9l
+
+          4MMpBFGuCiWZHV6wh1boVh5AC/3E3ZjGBezvoFeIE4TfqrI63G9ubVPo4Z/widhC
+
+          O5S5lE9zM1PTCdwkRyh0p2BdBI8Kq5iuTpLT3vxsWKtbEjf9PKr6EA1x9pWZHH2h
+
+          ZI+EOBriofYWdjO7kHUJDUIZ
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: e0cd008a1b97a2ea0e8c1599da036941c57344ca
+        project_id: maximal-chemist-355505
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      location: asia-south1
+      method: service-account-json
+      priority: interactive
+      project: maximal-chemist-355505
+      retries: 3
+      threads: 8
+      type: bigquery
+  target: prod
